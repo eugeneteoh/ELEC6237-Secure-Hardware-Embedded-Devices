@@ -3,6 +3,7 @@
 key = 13; %Key=1101
 %user inputs
 IN = [1 2 3 4];
+% IN = [1];
 %number of user inputs
 numIN = length(IN);
 excTime = zeros (numIN,1);
@@ -22,3 +23,10 @@ end
 excTime
 %display predicted execution times
 predTime
+
+% print keys that matches execution time
+for col = 1:length(predTime)
+    if predTime(:, col) == excTime
+        fprintf("Time matched key: %i\n", col)
+    end
+end
