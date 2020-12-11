@@ -1,0 +1,3 @@
+[submodule "c2"]
+	path = c2
+	url = git@github.com:eugenetwc/miniAES-Cpp.git
